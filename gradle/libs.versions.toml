@@ -1,0 +1,34 @@
+[versions]
+loom = "0.12-SNAPSHOT"
+loom-quiltflower = "1.7.3"
+
+minecraft = "1.19.2"
+yarn = "1.19.2+build.4"
+fabric-loader = "0.14.9"
+
+fabric-api = "0.59.0+1.19.2"
+clientarguments = "1.4.1"
+
+ice4j = "3.0-60-g28a23e1"
+
+autoservice = "1.0.1"
+
+devauth = "1.1.0"
+
+[libraries]
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+yarn = { module = "net.fabricmc:yarn", version.ref = "yarn" }
+fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }
+
+fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }
+clientarguments = { module = "dev.xpple:clientarguments", version.ref = "clientarguments" }
+
+ice4j = { module = "org.jitsi:ice4j", version.ref = "ice4j" }
+
+autoservice = { module = "com.google.auto.service:auto-service", version.ref = "autoservice" }
+
+devauth = { module = "me.djtheredstoner:DevAuth-fabric", version.ref = "devauth" }
+
+[plugins]
+loom = { id = "fabric-loom", version.ref = "loom" }
+loom-quiltflower = { id = "io.github.juuxel.loom-quiltflower", version.ref = "loom-quiltflower" }

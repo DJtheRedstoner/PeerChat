@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "peerchat",
+  "version": "${version}",
+
+  "name": "Peer Chat",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "DJtheRedstoner"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.djtheredstoner.peerchat.PeerChatMod::init"
+    ]
+  },
+
+  "mixins": [
+    "mixins.peerchat.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric-command-api-v2": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
